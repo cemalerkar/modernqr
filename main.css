@@ -160,20 +160,58 @@ hr {
   .item hr {
     width: 300px;
   }
-  .container {
-    height: 90vh;
-  }
   .brand-area {
     width: 380px;
   }
   body {
     width: 100vw;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
   }
   .navbar {
     top: 92%;
+  }
+}
+@media only screen and (min-height: 635px) {
+  .brand-area img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-height: 1306px) {
+  .active::after {
+    height: 50px;
+    top: -70%;
+  }
+}
+@media only screen and (max-height: 1110px) {
+  .active::after {
+    height: 45px;
+    top: -53%;
+  }
+}
+@media only screen and (max-height: 974px) {
+  .active::after {
+    height: 40px;
+    top: -40%;
+  }
+}
+@media only screen and (max-height: 845px) {
+  .active::after {
+    height: 35px;
+    top: -30%;
+  }
+}
+@media only screen and (max-height: 743px) {
+  .active::after {
+    height: 30px;
+    top: -18%;
+  }
+}
+@media only screen and (max-height: 543px) {
+  .active::after {
+    height: 20px;
+    top: 0%;
   }
 }
