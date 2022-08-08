@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Rubik:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 100vw;
+  height: 92vh;
+  overflow-y: auto;
+}
+.brand-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: orange;
+  position: relative;
+  border-radius: 0 0 50px 50px;
+}
+.brand-area img {
+  height: 12vh;
+  background-color: orange;
+  border-radius: 500px;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+}
+.brand-area p {
+  position: relative;
+  padding: 10px 0px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: white;
+  font-size: 32px;
+}
+.blank-area {
+  margin-top: -5px;
+}
+hr {
+  background-color: white;
+  border: white 2px solid;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.item-header {
+  display: flex;
+  width: 100vw;
+}
+.item-header h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.item img {
+  width: 100vw;
+  height: 40vh;
+}
+.item hr {
+  border: 1px solid rgba(255, 166, 0, 0.244);
+  width: 90vw;
+  margin-top: 5px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.tags-price {
+  display: flex;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.tags {
+  display: flex;
+  justify-content: left;
+}
+.price {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.tags > p {
+  margin: 0px 5px;
+  background-color: orange;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+.white {
+  background-color: white;
+}
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  background-color: orange;
+  position: absolute;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 8vh;
+  font-size: 20px;
+}
+.navbar ul li a {
+  position: relative;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  z-index: 1;
+}
+.active {
+  background-color: white;
+}
+.active > i {
+  color: orange;
+}
+.active::after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: -11%;
+  left: 0;
+  background-color: white;
+  height: 30px;
+  width: 100%;
+}
+@media only screen and (min-width: 550px) {
+  .container,
+  .item-header,
+  .item img,
+  .navbar,
+  .navbar ul {
+    width: 400px;
+    margin: 0;
+  }
+  .item hr {
+    width: 300px;
+  }
+  .container {
+    height: 90vh;
+  }
+  .brand-area {
+    width: 380px;
+  }
+  body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .navbar {
+    top: 92%;
+  }
+}
