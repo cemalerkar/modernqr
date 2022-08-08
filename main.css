@@ -115,7 +115,7 @@ hr {
   width: 100vw;
   height: 8vh;
   background-color: orange;
-  position: absolute;
+  position: fixed;
 }
 .navbar ul {
   display: flex;
