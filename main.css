@@ -14,7 +14,7 @@ body {
 }
 .container {
   width: 100vw;
-  height: 92vh;
+  height: 88vh;
   overflow-y: auto;
 }
 .brand-area {
@@ -115,7 +115,7 @@ hr {
   width: 100vw;
   height: 8vh;
   background-color: orange;
-  position: fixed;
+  position: absolute;
 }
 .navbar ul {
   display: flex;
